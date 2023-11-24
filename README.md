@@ -17,10 +17,15 @@ Nós da NutriTech, desenvolvemos uma Calculadora de Índice de Massa Corporal (I
 5- Pressionar o botão correspondente para sim ou não(Estará nas instruções do código)
 ---
 6- Caso o usuário responder sim, ele terá de preencher um formulário perguntando sobre seu peso e altura
+---
 7- Logo após responder o formulário e enviar, o Monitor serial irá retornar o resultado do seu IMC(Índice de Massa Corporal)
+---
 8- Terá a seguinte instrução, caso pisque o Led:
 - Vermelho: Abaixo do peso
 - Azul: Peso ideal
 - Verde: Acima do peso
+---
 9 - Haverá a seguinte pergunta ao concluir o teste: "Deseja realizar o procedimento novamente?"
+---
 10 - Pressionar o botão correspondente para sim ou não(Estará nas instruções do código)
+---
