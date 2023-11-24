@@ -29,3 +29,6 @@ Nós da NutriTech, desenvolvemos uma Calculadora de Índice de Massa Corporal (I
 ---
 10 - Pressionar o botão correspondente para sim ou não(Estará nas instruções do código)
 ---
+
+### RM94860 - Gustavo Bacelar Horita
+### RM93611- Pedro Faria Chagas Terra
