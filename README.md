@@ -5,8 +5,6 @@
 Nós da NutriTech, desenvolvemos uma Calculadora de Índice de Massa Corporal (IMC) com foco na promoção da saúde integral. Além do cálculo convencional, a aplicação oferece interpretações claras do resultado, dicas personalizadas para hábitos saudáveis, acompanhamento do histórico de IMC, notificações para verificações regulares e recursos educacionais. O objetivo é conscientizar os usuários sobre a importância da saúde física e mental, incentivando mudanças positivas no estilo de vida. A interface intuitiva e acessível torna a aplicação adequada para usuários de todas as idades.
 
 ## Instruções
-### Link do projeto no Tinkercard: (https://www.tinkercad.com/things/4ijWHCBaQxB-globalsolution-iot)
-### Link do projeto no Youtube: (URL)
 
 1- Abrir o link para ter acesso ao projeto(https://www.tinkercad.com/things/4ijWHCBaQxB-globalsolution-iot)
 ---
@@ -33,6 +31,8 @@ Nós da NutriTech, desenvolvemos uma Calculadora de Índice de Massa Corporal (I
 ---
 11- Caso o usuário decida encerrar o processo, todos os Leds irão piscar simultaneamente por 3 segundos e irá finalizar o teste
 ---
+### Link do projeto no Tinkercard: (https://www.tinkercad.com/things/4ijWHCBaQxB-globalsolution-iot)
+### Link do projeto no Youtube: (URL)
 
 ### RM94860 - Gustavo Bacelar Horita
 ### RM93611- Pedro Faria Chagas Terra
