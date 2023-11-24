@@ -25,9 +25,11 @@ Nós da NutriTech, desenvolvemos uma Calculadora de Índice de Massa Corporal (I
 - Azul: Peso ideal
 - Verde: Acima do peso
 ---
-9 - Haverá a seguinte pergunta ao concluir o teste: "Deseja realizar o procedimento novamente?"
+9- Haverá a seguinte pergunta ao concluir o teste: "Deseja realizar o procedimento novamente?"
 ---
-10 - Pressionar o botão correspondente para sim ou não(Estará nas instruções do código)
+10- Pressionar o botão correspondente para sim ou não(Estará nas instruções do código)
+---
+11- Caso o usuário decida encerrar o processo, todos os Leds irão piscar simultaneamente por 3 segundos e irá finalizar o teste
 ---
 
 ### RM94860 - Gustavo Bacelar Horita
