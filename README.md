@@ -31,6 +31,7 @@ Nós da NutriTech, desenvolvemos uma Calculadora de Índice de Massa Corporal (I
 ---
 11- Caso o usuário decida encerrar o processo, todos os Leds irão piscar simultaneamente por 3 segundos e irá finalizar o teste
 ---
-
+12- 
+---
 ### RM94860 - Gustavo Bacelar Horita
 ### RM93611- Pedro Faria Chagas Terra
