@@ -9,9 +9,13 @@ Nós da NutriTech, desenvolvemos uma Calculadora de Índice de Massa Corporal (I
 1- Abrir o link para ter acesso ao projeto(https://www.tinkercad.com/things/4ijWHCBaQxB-globalsolution-iot)
 -----
 2- Clique em "Editar isto"
+-----
 3- Após ser redirecionado para outra página, inicie a simulação
+-----
 4- Haverá a seguinte pergunta: ""Voce deseja descobrir o seu IMC?"
+-----
 5- Pressionar o botão correspondente para sim ou não(Estará nas instruções do código)
+-----
 6- Caso o usuário responder sim, ele terá de preencher um formulário perguntando sobre seu peso e altura
 7- Logo após responder o formulário e enviar, o Monitor serial irá retornar o resultado do seu IMC(Índice de Massa Corporal)
 8- Terá a seguinte instrução, caso pisque o Led:
