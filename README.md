@@ -32,7 +32,7 @@ Nós da NutriTech, desenvolvemos uma Calculadora de Índice de Massa Corporal (I
 11- Caso o usuário decida encerrar o processo, todos os Leds irão piscar simultaneamente por 5 segundos e irá finalizar o teste
 ---
 ### Link do projeto no Tinkercard: (https://www.tinkercad.com/things/4ijWHCBaQxB-globalsolution-iot)
-### Link do projeto no Youtube: (URL)
+### Link do projeto no Youtube: (https://www.youtube.com/watch?v=zUosjAaqc9w)
 ---
 ### RM94860 - Gustavo Bacelar Horita
 ### RM93611- Pedro Faria Chagas Terra
