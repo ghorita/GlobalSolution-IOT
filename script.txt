@@ -1,0 +1,118 @@
+const int pinLedVermelho = 8; 
+const int pinLedAzul = 9;     
+const int pinLedVerde = 10;   
+const int pinBotaoS = 2;      
+const int pinBotaoN = 3;      
+
+float peso, alturaCm, imc;
+char resposta;
+
+void setup() {
+  Serial.begin(9600);
+
+  pinMode(pinLedVermelho, OUTPUT);
+  pinMode(pinLedAzul, OUTPUT);
+  pinMode(pinLedVerde, OUTPUT);
+  pinMode(pinBotaoS, INPUT_PULLUP); 
+  pinMode(pinBotaoN, INPUT_PULLUP); 
+}
+
+void loop() {
+  Serial.println("Bem-vindo a Calculadora de IMC!");
+  Serial.println("Voce deseja descobrir o seu IMC? (Pressione o botao da esquerda para Sim ou da direita para Nao)");
+
+  while (true) {
+    if (digitalRead(pinBotaoS) == LOW) {
+      resposta = 's';
+      break;
+    }
+    
+    if (digitalRead(pinBotaoN) == LOW) {
+      resposta = 'n';
+      break;
+    }
+  }
+
+  if (resposta == 's' || resposta == 'S') {
+    Serial.println("Digite o peso em kg:");
+    peso = lerDado();
+
+    Serial.println("Digite a altura em centimetros:");
+    alturaCm = lerDado();
+
+    float alturaM = alturaCm / 100.0;
+
+    if (peso == 0 || alturaM == 0) {
+      Serial.println("Erro na leitura dos dados. Certifique-se de inserir valores validos.");
+      return;
+    }
+
+    imc = peso / (alturaM * alturaM);
+    Serial.print("Valor do seu IMC: ");
+    Serial.println(imc);
+
+    Serial.println("Vermelho: Abaixo do peso ");
+    Serial.println("Azul: Peso ideal");
+    Serial.println("Verde: Acima do peso");
+
+    if (imc < 18.5) {
+      piscarLED(pinLedVermelho);
+    } else if (imc >= 18.5 && imc <= 24.9) {
+      piscarLED(pinLedAzul);
+    } else {
+      piscarLED(pinLedVerde);
+    }
+
+    Serial.println("Deseja realizar o procedimento novamente? (Pressione o botao da esquerda para Sim ou da direita para Nao)");
+
+    while (true) {
+      if (digitalRead(pinBotaoS) == LOW) {
+        resposta = 's';
+        break;
+      }
+      if (digitalRead(pinBotaoN) == LOW) {
+        resposta = 'n';
+        break;
+      }
+    }
+
+    if (resposta == 'n' || resposta == 'N') {
+      piscarTodosLEDs();
+      Serial.println("Calculo realizado com sucesso!");
+      delay(5000); 
+      exit(0); 
+    }
+  } else if (resposta == 'n' || resposta == 'N') {
+    piscarTodosLEDs();
+    Serial.println("Finalizado!");
+    delay(5000); 
+    exit(0); 
+  }
+}
+
+float lerDado() {
+  while (Serial.available() == 0) {}
+  return Serial.parseFloat();
+}
+
+void piscarLED(int pinLED) {
+  for (int i = 0; i < 6; i++) { 
+    digitalWrite(pinLED, HIGH);
+    delay(500);
+    digitalWrite(pinLED, LOW);
+    delay(500);
+  }
+}
+
+void piscarTodosLEDs() {
+  for (int i = 0; i < 6; i++) {
+    digitalWrite(pinLedVermelho, HIGH);
+    digitalWrite(pinLedAzul, HIGH);
+    digitalWrite(pinLedVerde, HIGH);
+    delay(500);
+    digitalWrite(pinLedVermelho, LOW);
+    digitalWrite(pinLedAzul, LOW);
+    digitalWrite(pinLedVerde, LOW);
+    delay(500);
+  }
+}
